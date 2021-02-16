@@ -38,17 +38,22 @@ namespace PracticeProblemsLINQ
         }
         #endregion
 
-        //    #region Problem 3
-        //    //(5 points) Problem 3
-        //    //Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
-        //    public static Customer RunProblem3(List<Customer> customers)
-        //    {
-        //        //code
+        #region Problem 3
+        //(5 points) Problem 3
+        //Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
+        public static Customer RunProblem3(List<Customer> customers)
+        {
 
-        //        //return
+            var onlymike = new List<Customer>();
+            var getcustomers = customers.Where(c => c.FirstName == "Mike");
+           var newcustomers = getcustomers.First();
+            return newcustomers;
 
-        //    }
-        //    #endregion
+
+            //return
+
+        }
+        #endregion
 
         //    #region Problem 4
         //    //(5 points) Problem 4
